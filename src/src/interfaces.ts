@@ -11,3 +11,11 @@ export interface ISquare {
     kind: 'square';
     sideLength: number;
 }
+
+export interface IGenericIdentityFn<Type>{
+    (arg: Type): Type;
+}
+
+export interface ILengthwise {
+    length: number;
+}

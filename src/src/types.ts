@@ -4,3 +4,7 @@ export type Fish = { swim: () => void };
 export type Bird = { fly: () => void };
 export type Human = {swim?: () => void; fly?: () => void};
 export type Shape = ICircle | ISquare;
+export type Container<T, U> = {
+    element: T;
+    chldren: U[];
+}
