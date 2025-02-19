@@ -45,7 +45,32 @@ declare function create<T extends HTMLElement = HTMLDivElement, U extends HTMLEl
 const div = create();
 const p = create(new HTMLParagraphElement(), [new HTMLParagraphElement(), new HTMLDataListElement()]);
 
-///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+// type Job = {
+//     name: string;
+//     age: number;
+// }
+
+
+// type PrimaryJob = Job & {
+//     secondName: string;
+// }
+
+// type Queue<out T> = {
+//     enqueue(j: T): void;
+//     getJob(id: string): T;
+// }
+
+// declare const jobQueue: Queue<Job>;
+// declare const priorityJobQueue: Queue<PrimaryJob>;
+
+// const q3: Queue<Job> = jobQueue;
+// const q4: Queue<Job> = priorityJobQueue;
+
+// const q5: Queue<PrimaryJob> = jobQueue;
+// const q6: Queue<PrimaryJob> = priorityJobQueue;
+
+/////////////////////////////////////////////////////////////////////////////////
 
 // function padLeft(padding: number | string, input: string): string {
 //     if (typeof padding === 'number') {
